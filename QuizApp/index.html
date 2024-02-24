@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="../QuizApp/main.css" type="text/css">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="qn">
+            <p>HTML is full form of __________ .</p>
+            <div class="ans">
+                <div class="opt" id="correct-ans">
+                    <label for="opt1">
+                        <input type="radio" name="answer1" id="opt1" value="HyperText Markup Language">
+                        HyperText Markup Language</label>
+                </div>
+                <div class="opt" id="incorr-opt1">
+
+                    <label for="opt2">
+                        <input type="radio" name="answer1" id="opt2" value="HighText Markup Language">
+                        HighText Markup Language</label>
+                </div>
+                <div class="opt" id="incorr-opt2">
+                    <label for="opt3">
+                        <input type="radio" name="answer1" id="opt3" value="HyperText Markdown Language">
+                        HyperText Markdown Language</label>
+                </div>
+                <div class="opt" id="incorr-opt3">
+                    <label for="opt4">
+                        <input type="radio" name="answer1" id="opt4" value="None">
+                        None</label>
+                </div>
+                <div class="result" id="res1">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="qn">
+            <p>How many sizes of headers are available in HTML by default?</p>
+            <div class="ans">
+                <div class="opt" id="in-op">
+                    <label for="optt1">
+                        <input type="radio" name="answer2" id="optt1" value="5">
+                        5</label>
+                </div>
+                <div class="opt" id="in-op1">
+                    <label for="optt2">
+                        <input type="radio" name="answer2" id="optt2" value="1">
+                        1</label>
+                </div>
+                <div class="opt" id="in-op2">
+                    <label for="optt3">
+                        <input type="radio" name="answer2" id="optt3" value="3">
+                        3</label>
+                </div>
+                <div class="opt" id="corr-opt">
+                    <label for="optt4">
+                        <input type="radio" name="answer2" id="optt4" value="6">
+                        6</label>
+                </div>
+                <div class="result" id="res2"></div>
+
+            </div>
+
+        </div>
+        <div class="qn">
+            <p>What are the types of list available in HTML?</p>
+            <div class="ans">
+                <div class="opt" id="corr-opt1">
+                    <label for="opti1">
+                        <input type="radio" name="answer3" id="opti1" value="Ordered, Unordered Lists">
+                        Ordered, Unordered Lists</label>
+                </div>
+                <div class="opt" id="in-opt1">
+
+                    <label for="opti2">
+                        <input type="radio" name="answer3" id="opti2" value="bulleted,Numbered Lists">
+                        bulleted,Numbered Lists</label>
+                </div>
+                <div class="opt" id="in-opt2">
+                    <label for="opti3">
+                        <input type="radio" name="answer3" id="opti3" value="Named,Unnamed Lists">
+                        Named,Unnamed Lists</label>
+                </div>
+                <div class="opt" id="in-opt3">
+                    <label for="opti4">
+                        <input type="radio" name="answer3" id="opti4" value="None of the above">
+                        None of the above</label>
+                </div>
+                <div class="result" id="res3"></div>
+
+            </div>
+        </div>
+        <div class="qn">
+            <p>How to create an ordered list in HTML?</p>
+            <div class="ans">
+                <div class="opt" id="in-optt1">
+                    <label for="optii1">
+                        <input type="radio" name="answer4" id="optii1" value="<ul>">
+                        &ltul&gt</label>
+                </div>
+                <div class="opt" id="optt-ans">
+                    <label for="optii2">
+                        <input type="radio" name="answer4" id="optii2" value="<ol>">
+                        &ltol&gt</label>
+                </div>
+                <div class="opt" id="in-optt2">
+                    <label for="optii3">
+                        <input type="radio" name="answer4" id="optii3" value="<li>">
+                        &ltli&gt</label>
+                </div>
+                <div class="opt" id="in-optt3">
+                    <label for="optii4">
+                        <input type="radio" name="answer4" id="optii4" value="None of the above">
+                        None of the above</label>
+                </div>
+                <div class="result" id="res4"></div>
+
+            </div>
+        </div>
+        <div class="qn">
+            <p>Which attribute is used to provide a unique name to an HTML element?</p>
+            <div class="ans">
+                <div class="opt" id="crt-opt">
+                    <label for="optio1">
+                        <input type="radio" name="answer5" id="optio1" value="id">
+                        id</label>
+                </div>
+                <div class="opt" id="in-opti1">
+                    <label for="optio2">
+                        <input type="radio" name="answer5" id="optio2" value="class">
+                        class</label>
+                </div>
+                <div class="opt" id="in-opti2">
+                    <label for="optio3">
+                        <input type="radio" name="answer5" id="optio3" value="type">
+                        type</label>
+                </div>
+                <div class="opt" id="in-opti3">
+                    <label for="optio4">
+                        <input type="radio" name="answer5" id="optio4" value="None of the above">
+                        None of the above</label>
+                </div>
+                <div class="result" id="res5"></div>
+
+            </div>
+        </div>
+
+
+        <div class="btn">
+            <button id="answer-view">View Answer</button>
+            <button id="submit" onclick="submitForm()">Submit</button>
+        </div>
+        <div id="score">
+            
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

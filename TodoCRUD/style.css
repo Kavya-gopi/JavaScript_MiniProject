@@ -1,0 +1,118 @@
+body {
+  background-attachment: fixed;
+}
+
+.search-tag {
+  margin-top: 5px;
+  text-align: center;
+}
+
+table{
+    margin-top:30px;
+    margin-left:auto;
+    margin-right: auto;
+    
+}
+.wrapper fieldset{
+  border-color: #ffffff;
+  border:0px;
+}
+table, th, td {  
+    border-collapse: collapse; 
+
+}  
+th, td ,tr{  
+    text-align: center;
+    padding: 10px;  
+}  
+table#table-tabl tr:nth-child(even) {  
+    background-color: #eee;  
+}  
+table#table-tabl tr:nth-child(odd) {  
+    background-color: #fff;  
+}  
+table#table-tabl th {  
+    color: white;  
+    background-color: rgb(202, 16, 174);  
+    font-weight:bolder;
+    font-family: cursive;
+}
+
+.hidetable{
+  opacity: 0.1;
+}
+
+tbody [type="button"], tbody button{
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width:100%;
+    
+  }
+
+#add-table{
+    width:100%;
+    padding:6px 0;
+    border-radius: 5px;
+    background-color: rgb(202, 16, 174);
+    color:white;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+.form {
+  display: none;
+}  
+
+.wrapper{
+  display:flex;
+  margin:50px;
+  border-color:#ffffff;
+}
+#input-form fieldset{
+  display: grid;
+  background-color: aqua;
+  margin-top:10px;
+  width:300px;
+  border:2px solid red;
+  border-radius:5px;
+  padding:20px;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: cursive;
+  
+}
+
+#input-form button{
+  margin:5px;
+  padding:7px 0;
+  background-color: rgb(202, 16, 174);
+  color:white;
+  font-family: cursive;
+  border-radius: 5px;
+}
+
+#input-form fieldset input{
+  padding:5px;
+  border:2px solid gray;
+  border-radius: 5px;
+}
+
+
+
+.upd-Btn {
+  display: none;
+}
+
+p {
+  color: red;
+  font-weight: 600;
+}
+
+.srch-hide {
+  display: none;
+}
+

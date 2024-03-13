@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <fieldset>
+            <div class="search-tag">
+                <label>Search<input type="text" name="SearchValue" id="search-field"
+                        onkeyup="searchByName(this.value.toLowerCase())"></label>
+            </div>
+            <table id="table-tabl">
+                <thead>
+                    <tr>
+                        <th>Item No</th>
+                        <th>Name</th>
+                        <th>FamilyName</th>
+                        <th>D.O.B</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl-bdy">
+                    <tr>
+                        <td colspan="5"><button id="add-table" onclick="myForm()">Add</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+
+        <div class="form" id="input-form">
+            <fieldset>
+
+                <label for="item-no">Item No</label>
+                <input type="number" name="ItemNo" id="item-no">
+                <p id="err-msg-item" class="errmsg"></p>
+
+                <label for="name-n">Name</label>
+                <input type="text" name="Name" id="name-n">
+                <p id="err-msg-nme" class="errmsg"></p>
+
+                <label for="fname">FamilyName</label>
+                <input type="text" name="FamName" id="fname">
+                <p id="err-msg-fnme" class="errmsg"></p>
+
+                <label for="dob">D.O.B</label>
+                <input type="date" name="DOB" id="dob">
+                <p id="err-msg-dob" class="errmsg"></p>
+
+                <button id="add-Data" class="add-Btn" onclick="addData()">Add</button>
+                <button id="cancel-form" class="cancel-Btn" onclick="closeForm()">Cancel</button>
+                <button id="update-data" class="upd-Btn">Update</button>
+
+            </fieldset>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
